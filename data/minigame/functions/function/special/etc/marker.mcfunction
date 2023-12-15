@@ -1,0 +1,1 @@
+execute as @a[tag=player] at @s run summon marker ~ ~ ~ {Tags:["lightning_bolt"]}

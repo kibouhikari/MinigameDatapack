@@ -1,0 +1,4 @@
+execute if score #special_1 temporary matches 1 if score #GameTimer temporary <= #special_1Limit temporary run function minigame:function/special/action/1
+execute if score #special_2 temporary matches 1 if score #GameTimer temporary <= #special_2Limit temporary run function minigame:function/special/action/2
+execute if score #special_3 temporary matches 1 if score #GameTimer temporary <= #special_3Limit temporary run function minigame:function/special/action/3
+execute if score #special_4 temporary matches 1 if score #GameTimer temporary <= #special_4Limit temporary run function minigame:function/special/action/4
