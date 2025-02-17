@@ -1,0 +1,2 @@
+execute store result storage minigame: max_health double 1 run scoreboard players get #max_health temporary
+execute store result storage minigame: gametimer double 1 run scoreboard players get #gametimer temporary

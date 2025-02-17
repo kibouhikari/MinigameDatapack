@@ -1,0 +1,1 @@
+function minigame:create/tdm/yellow/randomspawn_2 with storage minigame:

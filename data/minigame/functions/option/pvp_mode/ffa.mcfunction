@@ -1,0 +1,3 @@
+data modify storage minigame: mode set value ffa
+tellraw @a [{"text":"個人戦に変更しました"},{"text":"\n "}]
+tellraw @s[tag=host] ["",{"text":"\u8a2d\u5b9a/Option -\u6226\u95d8\u30bf\u30a4\u30d7-\n"},{"text":"\u30fb\u500b\u4eba\u6226/FFA","clickEvent":{"action":"run_command","value":"/function minigame:option/pvp_mode/ffa"}},{"text":"\n"},{"text":"\u30fb\u30c1\u30fc\u30e0\u6226/TDM","clickEvent":{"action":"run_command","value":"/function minigame:option/pvp_mode/tdm"}},{"text":"\n"},{"text":"\u623b\u308b","clickEvent":{"action":"run_command","value":"/function minigame:option/"}},{"text":"\n "}]
