@@ -8,7 +8,7 @@
 #execute as @a at @s run scoreboard players operation @s gold += @s gold_block
 
 # エントリー、ゴールド表示
-execute as @a[tag=entry,tag=!player] at @s run title @s actionbar [{"text":"エントリー中","color":"green"},{"text":"  |  所持ゴールド: ","color":"white"},{"score":{"name":"@s","objective":"gold"},"color":"gold"}]
-execute as @a[tag=!entry,tag=!player] at @s run title @s actionbar [{"text":"未エントリー","color":"gray"},{"text":"  |  所持ゴールド: ","color":"white"},{"score":{"name":"@s","objective":"gold"},"color":"gold"}]
+execute as @a[tag=entry,tag=!player] at @s run title @s actionbar [{"text":"エントリー中","color":"green"}]
+execute as @a[tag=!entry,tag=!player] at @s run title @s actionbar [{"text":"未エントリー","color":"gray"}]
 execute as @a[tag=player] at @s if score #mode temporary matches 0 run title @s actionbar [{"text":"キル数:"},{"color":"aqua","score":{"objective":"killcount","name": "@s"}}]
 execute as @a[tag=player] at @s if score #mode temporary matches 1 run title @s actionbar [{"text":"RedKills:","color":"red"},{"color":"aqua","score":{"objective":"temporary","name":"#killscore.red"}},{"text":"    BlueKills:","color":"blue"},{"color":"aqua","score":{"objective":"temporary","name":"#killscore.blue"}},{"text":"    GreenKills:","color":"green"},{"color":"aqua","score":{"objective":"temporary","name":"#killscore.green"}},{"text":"    YellowKills:","color":"yellow"},{"color":"aqua","score":{"objective":"temporary","name":"#killscore.yellow"}}]

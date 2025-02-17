@@ -1,8 +1,9 @@
 
 # スコア作成
 scoreboard objectives add temporary dummy
-scoreboard objectives add temporary dummy
+scoreboard objectives add loadout dummy
 scoreboard objectives add deathcount deathCount
+scoreboard objectives add leave_game custom:leave_game
 scoreboard objectives add killcount playerKillCount
 scoreboard objectives add killscore playerKillCount
 scoreboard objectives add random_team dummy
@@ -29,6 +30,9 @@ team add green "Green"
 team add yellow "Yellow"
 team add lobby "Lobby"
 team add single_battle "Single"
+
+# ボスバー作成
+bossbar add gametimer "試合時間"
 
 # チーム設定
 team modify red friendlyFire false
