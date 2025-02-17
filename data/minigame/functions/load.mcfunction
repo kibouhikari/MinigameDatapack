@@ -1,51 +1,36 @@
-
-# スコア作成
+# スコアボード生成
 scoreboard objectives add temporary dummy
-scoreboard objectives add temporary dummy
+scoreboard objectives add s dummy
 scoreboard objectives add deathcount deathCount
-scoreboard objectives add killcount playerKillCount
-scoreboard objectives add killscore playerKillCount
-scoreboard objectives add random_team dummy
-scoreboard objectives add random_spawn dummy
+scoreboard objectives add temp.killcount playerKillCount
+scoreboard objectives add killcount playerKillCount "キル数"
 
-# スコア設定
-scoreboard players add #dummy killscore 0
-scoreboard players add #most_killcount temporary 0
-scoreboard players add #killcount.red temporary 0
-scoreboard players add #killcount.blue temporary 0
-scoreboard players add #killcount.green temporary 0
-scoreboard players add #killcount.yellow temporary 0
+# スコアボードせってい
 scoreboard objectives setdisplay list killcount
-scoreboard players set #special_1Limit temporary 4800
-scoreboard players set #special_2Limit temporary 3600
-scoreboard players set #special_3Limit temporary 2400
-scoreboard players set #special_4Limit temporary 1200
-execute unless score #map temporary matches 0.. run scoreboard players set #map temporary 1
 
-# チーム作成
-team add red "Red"
-team add blue "Blue"
-team add green "Green"
-team add yellow "Yellow"
-team add lobby "Lobby"
-team add single_battle "Single"
+# チーム生成
+team add lobby
+team add red "赤チーム"
+team add blue "青チーム"
+team add green "緑チーム"
+team add yellow "黄チーム"
 
 # チーム設定
-team modify red friendlyFire false
-team modify red prefix [{"text":"Red","color":"red"},{"text":" - ","color":"white"}]
-team modify blue friendlyFire false
-team modify blue prefix [{"text":"Blue","color":"blue"},{"text":" - ","color":"white"}]
-team modify green friendlyFire false
-team modify green prefix [{"text":"Green","color":"green"},{"text":" - ","color":"white"}]
-team modify yellow friendlyFire false
-team modify yellow prefix [{"text":"Yellow","color":"yellow"},{"text":" - ","color":"white"}]
+team modify lobby friendlyFire false
 
-team modify red nametagVisibility hideForOtherTeams
-team modify blue nametagVisibility hideForOtherTeams
-team modify green nametagVisibility hideForOtherTeams
-team modify yellow nametagVisibility hideForOtherTeams
-team modify single_battle nametagVisibility hideForOwnTeam
+# ボスバー作成
+bossbar add gametimer "試合時間"
+bossbar add before_gametimer "カウントダウン"
 
+# ボスバー設定
+bossbar set gametimer style notched_6
+bossbar set before_gametimer style notched_6
+bossbar set gametimer color red
+bossbar set before_gametimer color green
 
-# リロード通知
-tellraw @a {"text":"Minigame Datapack has successfully loaded!"}
+# 設定適用
+function minigame:option/data/
+
+# reloadまたはcreate完了通知
+execute unless score #create temporary matches 1 run tellraw @a [{"text":"Load","color":"green"},{"text":"Complete","color":"yellow"}]
+execute if score #create temporary matches 1 as @a[tag=host] run function minigame:create/reload_after
