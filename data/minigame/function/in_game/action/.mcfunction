@@ -1,5 +1,5 @@
 # キル者ステータス設定
-execute as @a[scores={killscore=1..}] at @s run effect give @s health_boost 99999 4 true
+execute as @a[scores={killscore=1..}] at @s run effect give @s health_boost infinite 4 true
 execute as @a[scores={killscore=1..}] at @s run effect give @s instant_health 20 0 true
 
 # 定期発光
@@ -29,7 +29,7 @@ execute if score #GameTimer temporary matches 0 run function minigame:function/g
 
 # 落雷判定
 scoreboard players add @e[tag=lightning_bolt] temporary 1
-execute as @e[tag=lightning_bolt] at @s run particle minecraft:dust 1 1 1 1 ~ ~0.2 ~ 0.2 0 0.2 0 1
+execute as @e[tag=lightning_bolt] at @s run particle minecraft:dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.2 0 0.2 0 1
 execute as @e[tag=lightning_bolt,scores={temporary=30..}] at @s run summon lightning_bolt ~ ~ ~
 execute as @e[tag=lightning_bolt,scores={temporary=30..}] at @s run kill @s
 
