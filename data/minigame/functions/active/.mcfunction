@@ -14,7 +14,6 @@ execute if entity @a[scores={leave_game=1..}] run function minigame:active/leave
 execute if score #game temporary matches 1 run function minigame:in_game/action/
 
 # 落雷警告音
-execute if score #special_lighting_bolt_timer temporary matches 0.. run tellraw @a [{"text":"timer:","color":"red"},{"color":"aqua","score":{"objective":"temporary","name":"#special_lighting_bolt_timer"}}]
 execute if score #special_lighting_bolt_timer temporary matches 10 run function minigame:function/special/etc/marker
 execute if score #special_lighting_bolt_timer temporary matches 0 run function minigame:function/special/etc/marker
 execute if score #special_lighting_bolt_timer temporary matches 0.. run scoreboard players remove #special_lighting_bolt_timer temporary 1

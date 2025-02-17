@@ -28,6 +28,7 @@ execute as @a[tag=player] at @s run function minigame:function/get_loadout
 # ボスバー設定
 bossbar set minecraft:gametimer visible true
 bossbar set minecraft:gametimer players @a
+execute store result bossbar minecraft:gametimer max run scoreboard players get #GameTimer temporary
 
 # ステータス設定
 gamemode adventure @a[tag=player]
