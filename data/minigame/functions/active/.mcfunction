@@ -18,5 +18,7 @@ execute if score #special_lighting_bolt_timer temporary matches 10 run function 
 execute if score #special_lighting_bolt_timer temporary matches 0 run function minigame:function/special/etc/marker
 execute if score #special_lighting_bolt_timer temporary matches 0.. run scoreboard players remove #special_lighting_bolt_timer temporary 1
 execute as @a at @s if score #special_lighting_bolt_timer temporary matches 20 run playsound block.anvil.land player @s
+execute as @a at @s if score #special_lighting_bolt_timer temporary matches 15 run playsound block.anvil.land player @s
 execute as @a at @s if score #special_lighting_bolt_timer temporary matches 10 run playsound block.anvil.land player @s
+execute as @a at @s if score #special_lighting_bolt_timer temporary matches 5 run playsound block.anvil.land player @s
 execute as @a at @s if score #special_lighting_bolt_timer temporary matches 0 run playsound block.anvil.land player @s

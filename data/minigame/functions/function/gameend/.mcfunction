@@ -11,10 +11,10 @@ title @a title "試合終了"
 team join lobby @a
 bossbar set minecraft:gametimer visible false
 clear @a[tag=player]
-tp @a[tag=player] 0.5 56 0.5 0 0
+execute in minecraft:overworld run tp @a[tag=player] 0.5 56 0.5 0 0
 execute as @a at @s run playsound minecraft:ui.loom.take_result player @s
 tag @a[tag=player] remove player
-spawnpoint @a 0 56 0 0
+execute in minecraft:overworld run spawnpoint @a 0 56 0 0
 
 # 個人戦勝利判定
 execute if score #mode temporary matches 0 run function minigame:function/gameend/solomode
