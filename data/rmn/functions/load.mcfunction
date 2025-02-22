@@ -1,4 +1,3 @@
-
 # スコア作成
     scoreboard objectives add rmn.temporary dummy
     scoreboard objectives add rmn.loadout dummy
@@ -8,10 +7,13 @@
     scoreboard objectives add rmn.killscore playerKillCount
     scoreboard objectives add rmn.random_team dummy
     scoreboard objectives add rmn.random_spawn dummy
+    scoreboard objectives add rmn.in_mode dummy
+    scoreboard objectives add rmn.in_map dummy
+    scoreboard objectives add rmn.in_match dummy
 
 # スコア設定
-    #0加算してダミープレイヤーに値を持たせる
-    scoreboard players add #dummy killscore 0
+    #0加算して値を持たせる
+    scoreboard players add #dummy rmn.killcount 0
     scoreboard players add #most_killcount rmn.temporary 0
     scoreboard players add #killcount.red rmn.temporary 0
     scoreboard players add #killcount.blue rmn.temporary 0
@@ -20,19 +22,19 @@
     scoreboard players add #mode_error_check rmn.temporary 0
     scoreboard players add #map_error_check rmn.temporary 0
     scoreboard players add #gametimer_error_check rmn.temporary 0
+    scoreboard players add @a rmn.in_mode 0
+    scoreboard players add @a rmn.in_map 0
+    scoreboard players add @a rmn.in_match 0
 
     #各モードのデフォルト試合時間
-    scoreboard players set #ffa_default_gametimer rmn.temporary 600
-    scoreboard players set #tdm_default_gametimer rmn.temporary 600
+    scoreboard players set #ffa_default_gametimer rmn.temporary 300
+    scoreboard players set #tdm_default_gametimer rmn.temporary 300
 
     #特殊イベント
     scoreboard players set #special_1Limit rmn.temporary 4800
     scoreboard players set #special_2Limit rmn.temporary 3600
     scoreboard players set #special_3Limit rmn.temporary 2400
     scoreboard players set #special_4Limit rmn.temporary 1200
-
-    #リストにキル数を表示
-    scoreboard objectives setdisplay list killcount
 
 # チーム作成
     team add rmn.lobby "Lobby"
@@ -69,7 +71,12 @@
     bossbar set rmn.gametimer style notched_10
 
 # gamerule
+    gamerule keepInventory true
     gamerule doImmediateRespawn true
+    gamerule doDaylightCycle false
+    gamerule doWeatherCycle false
+    gamerule doMobSpawning false
+    gamerule mobGriefing false
 
 
 # リロード通知

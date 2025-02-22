@@ -1,4 +1,4 @@
-playsound ui.button.click player @s ~ ~ ~ 1
+playsound ui.button.click master @s ~ ~ ~ 1
 
 scoreboard players add #ffa_gametimer rmn.temporary 30
 
