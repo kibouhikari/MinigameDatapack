@@ -10,6 +10,7 @@
     scoreboard objectives add rmn.in_mode dummy
     scoreboard objectives add rmn.in_map dummy
     scoreboard objectives add rmn.in_match dummy
+    scoreboard objectives add rmn.health health
 
 # スコア設定
     #0加算して値を持たせる
@@ -52,16 +53,19 @@
     #Red
     team modify rmn.red nametagVisibility hideForOtherTeams
     team modify rmn.red friendlyFire false
+    team modify rmn.single seeFriendlyInvisibles true
     team modify rmn.red prefix [{"text":"Red","color":"red"},{"text":" - ","color":"white"}]
 
     #Blue
     team modify rmn.blue nametagVisibility hideForOtherTeams
     team modify rmn.blue friendlyFire false
+    team modify rmn.single seeFriendlyInvisibles true
     team modify rmn.blue prefix [{"text":"Blue","color":"blue"},{"text":" - ","color":"white"}]
     
     #Single
     team modify rmn.single nametagVisibility hideForOwnTeam
     team modify rmn.single friendlyFire true
+    team modify rmn.single seeFriendlyInvisibles false
     team modify rmn.single prefix [{"text":"FFA","color":"aqua"},{"text":" - ","color":"white"}]
 
     #Spectator
@@ -77,6 +81,8 @@
     bossbar set rmn.gametimer style notched_10
 
 # gamerule
+    gamerule commandBlockOutput false
+    gamerule sendCommandFeedback true
     gamerule keepInventory true
     gamerule doImmediateRespawn true
     gamerule doDaylightCycle false

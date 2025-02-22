@@ -5,10 +5,14 @@
     tag @a remove rmn.player
     clear @a[tag=rmn.entry]
     gamemode adventure @a[tag=rmn.entry]
+    effect clear @a[tag=rmn.entry]
 
-# リストにスコアを表示
+# スコアを表示
     #非表示
     scoreboard objectives setdisplay list
+
+    #体力非表示
+    scoreboard objectives setdisplay belowName
 
 # 試合時間を表示
     bossbar set minecraft:rmn.gametimer visible false

@@ -32,7 +32,7 @@
     execute as @a[tag=rmn.player] run function rmn:map/map1/mode/tdm/system/get_loadout
 
 # プレイヤーの属性を適用
-    execute as @a[tag=rmn.player] run attribute @s generic.max_health base set 40
+    execute as @a[tag=rmn.player] run attribute @s generic.max_health base set 20
     effect give @a[tag=rmn.player] instant_health 10 10
     effect give @a[tag=rmn.player] saturation 10 10
     effect give @a[tag=rmn.player] resistance 3 255
@@ -43,6 +43,9 @@
 # リストにスコアを表示
     #キル数を表示
     scoreboard objectives setdisplay list rmn.killcount
+
+    #体力非表示
+    scoreboard objectives setdisplay belowName rmn.health
 
 # 試合時間を適用
     execute store result bossbar minecraft:rmn.gametimer max run scoreboard players get #tdm_gametimer rmn.temporary

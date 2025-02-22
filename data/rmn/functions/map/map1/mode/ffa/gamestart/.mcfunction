@@ -26,13 +26,15 @@
     team join rmn.single @a[tag=rmn.player]
 
 # 参加者をTP
-    function rmn:map/map1/mode/ffa/gamestart/tp_random
+    #tpしたい人にタグをつける
+    tag @a[tag=rmn.player] add rmn.need_spawn
+    function rmn:map/map1/mode/ffa/gamestart/tp_repeat
 
 # ロードアウト振り分け
     execute as @a[tag=rmn.player] run function rmn:map/map1/mode/ffa/system/get_loadout
 
 # プレイヤーの属性を適用
-    execute as @a[tag=rmn.player] run attribute @s generic.max_health base set 40
+    execute as @a[tag=rmn.player] run attribute @s generic.max_health base set 20
     effect give @a[tag=rmn.player] instant_health 10 10
     effect give @a[tag=rmn.player] saturation 10 10
     effect give @a[tag=rmn.player] resistance 3 255
@@ -43,6 +45,9 @@
 # リストにスコアを表示
     #キル数を表示
     scoreboard objectives setdisplay list rmn.killcount
+
+    #体力表示
+    scoreboard objectives setdisplay belowName rmn.health
 
 # 試合時間を適用
     execute store result bossbar minecraft:rmn.gametimer max run scoreboard players get #ffa_gametimer rmn.temporary
