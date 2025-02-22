@@ -41,6 +41,7 @@
     team add rmn.red "Red"
     team add rmn.blue "Blue"
     team add rmn.single "Single"
+    team add rmn.spectator "観戦"
 
 # チーム設定
     #Lobby
@@ -62,6 +63,11 @@
     team modify rmn.single nametagVisibility hideForOwnTeam
     team modify rmn.single friendlyFire true
     team modify rmn.single prefix [{"text":"FFA","color":"aqua"},{"text":" - ","color":"white"}]
+
+    #Spectator
+    team modify rmn.spectator nametagVisibility never
+    team modify rmn.spectator friendlyFire false
+    team modify rmn.spectator prefix [{"text":"観戦","color":"gray"},{"text":" - ","color":"white"}]
 
 # ボスバー作成
     bossbar add rmn.gametimer "試合時間"
