@@ -1,0 +1,53 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/atea.buttstock_crab"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/atea.grip_shift"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/atea.grip_zolfaqar_gp"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/atea.muzzle_mxm_dsxm"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/emxarms.sight_emx_anonymous"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/tacz.extended_mag_3"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/tacz.light_extended_mag_3"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/tacz.scope_elcan_4x"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/tacz.sniper_extended_mag_3"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/tacz.stock_carbon_bone_c5"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/attachment/tti_gunpack.scope_lpvo_1_6"
+              }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,93 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/atea.muzzle_salvo12"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/atea.muzzle_vector10"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/atea.sight_smtbd_cm2hp_10t60x56"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.extended_mag_2"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.grip_vertical_military"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.light_extended_mag_2"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.muzzle_brake_cthulhu"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.muzzle_brake_trex"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.muzzle_salvo12"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.muzzle_silence_phantom_s1"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.oem_stock_heavy"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.oem_stock_tactical"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.scope_acog_ta31"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.scope_standard_8x"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.sight_552"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.sight_coyote"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.sight_exp3"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.sight_uh1"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.sight_vortex_viper_rd_rex"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.sniper_extended_mag_2"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/attachment/tacz.stock_tactical_ar"
+              }
+        ]
+      }
+    ]
+  }

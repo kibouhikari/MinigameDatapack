@@ -1,0 +1,19 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "tacz:attachment",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{AttachmentId:\"atea:muzzle_salvo12\"}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

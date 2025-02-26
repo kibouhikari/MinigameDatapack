@@ -1,0 +1,3 @@
+scoreboard players add @e[type=marker,tag=rmn.map1,tag=rmn.tdm_random_spawn] rmn.random_spawn 1
+execute as @e[type=marker,tag=rmn.map1,tag=rmn.tdm_random_spawn] if score @s rmn.random_spawn >= #blue_player rmn.temporary run scoreboard players set #red_spawn_found rmn.temporary 1
+execute if score #red_spawn_found rmn.temporary matches 0 run function rmn:map/map1/mode/tdm/system/spawn/change/red/repeat

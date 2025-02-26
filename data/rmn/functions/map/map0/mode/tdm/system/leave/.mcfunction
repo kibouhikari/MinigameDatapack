@@ -1,5 +1,5 @@
 # 参加者をTP
-    execute in minecraft:overworld run tp @s 0.5 56 0.5 0 0
+    execute in minecraft:overworld run tp @s -5.5 57 -2.5 0 0
 
 # 参加者を元の状態へ戻す
     tag @s remove rmn.player

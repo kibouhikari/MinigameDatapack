@@ -2,7 +2,6 @@
     attribute @s generic.max_health base set 20
     effect give @s instant_health 10 10
     effect give @s saturation 10 10
-    effect give @s resistance 3 255
 
 # アイテム削除
     clear @s

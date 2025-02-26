@@ -1,0 +1,25 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/other/cooked_beef"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/other/cooked_porkchop"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/other/golden_apple"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/other/strong_healing_posion"
+              }
+        ]
+      }
+    ]
+  }

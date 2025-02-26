@@ -1,6 +1,6 @@
-# メニューを開いて設定をする
+# メニューを開いて設定をする(試合外のみ)
     #試合時間を適用する
-    function rmn:menu/command/mode/set_gametimer
+    execute unless data storage rmn: {in_game:1b} run function rmn:menu/command/mode/set_gametimer
 
     #メニューを開く
-    function rmn:menu/
+    execute unless data storage rmn: {in_game:1b} run function rmn:menu/

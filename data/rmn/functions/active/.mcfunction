@@ -1,5 +1,5 @@
 # スポーン場所設定
-    execute in minecraft:overworld run spawnpoint @a 0 56 0 0
+    execute in minecraft:overworld run spawnpoint @a -6 57 -3 0
 
 # 試合外処理
     #rmn: in_gameが0bなら試合外処理を実行

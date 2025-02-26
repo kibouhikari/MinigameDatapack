@@ -1,0 +1,25 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/other/golden_apple"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/other/golden_carrot"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/other/regeneration_splash_posion"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/other/strong_healing_splash_potion"
+              }
+        ]
+      }
+    ]
+  }

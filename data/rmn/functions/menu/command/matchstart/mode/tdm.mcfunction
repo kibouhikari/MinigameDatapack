@@ -1,2 +1,5 @@
 execute if score #map rmn.temporary matches 0 run tellraw @s [{"text":"\n"},{"text":"～試合開始～","clickEvent": {"action": "run_command","value": "/function rmn:map/map0/mode/tdm/gamestart/"}},{"text":"\n"}]
 execute if score #map rmn.temporary matches 1 run tellraw @s [{"text":"\n"},{"text":"～試合開始～","clickEvent": {"action": "run_command","value": "/function rmn:map/map1/mode/tdm/gamestart/"}},{"text":"\n"}]
+execute if score #map rmn.temporary matches 2 run tellraw @s [{"text":"\n"},{"text":"～試合開始～","clickEvent": {"action": "run_command","value": "/function rmn:map/map2/mode/tdm/gamestart/"}},{"text":"\n"}]
+execute if score #map rmn.temporary matches 3 run tellraw @s [{"text":"\n"},{"text":"～試合開始～","clickEvent": {"action": "run_command","value": "/function rmn:map/map3/mode/tdm/gamestart/"}},{"text":"\n"}]
+execute if score #map rmn.temporary matches 4 run tellraw @s [{"text":"\n"},{"text":"～試合開始～","clickEvent": {"action": "run_command","value": "/function rmn:map/map4/mode/tdm/gamestart/"}},{"text":"\n"}]

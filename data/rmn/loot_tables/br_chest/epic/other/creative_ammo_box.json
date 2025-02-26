@@ -1,0 +1,19 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "tacz:ammo_box",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{AllTypeCreative:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

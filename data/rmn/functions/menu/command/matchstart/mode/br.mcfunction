@@ -1,0 +1,2 @@
+execute if score #map rmn.temporary matches 5 run tellraw @s [{"text":"\n"},{"text":"～試合開始～","clickEvent": {"action": "run_command","value": "/function rmn:map/map5/mode/br/gamestart/"}},{"text":"\n"}]
+execute if score #map rmn.temporary matches 5 run tellraw @s [{"text":"\n"},{"text":"～試合開始～","clickEvent": {"action": "run_command","value": "/function rmn:map/map6/mode/br/gamestart/"}},{"text":"\n"}]

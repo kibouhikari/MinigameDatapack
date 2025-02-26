@@ -1,0 +1,41 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/gun/mk16.aks74u"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/gun/rebel.rs1ma"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/gun/tacz.ak47"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/gun/tacz.db_short"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/gun/tacz.glock_17"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/gun/tacz.p320"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/gun/tacz.rpk"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/gun/tacz.ump45"
+              }
+        ]
+      }
+    ]
+  }

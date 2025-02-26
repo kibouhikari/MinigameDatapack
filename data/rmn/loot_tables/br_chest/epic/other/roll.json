@@ -1,0 +1,21 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/epic/other/creative_ammo_box"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/epic/other/enchanted_golden_apple"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/epic/other/invisibility_lingering_potion"
+              }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,21 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/epic/attachment/mk16.phone"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/epic/attachment/tacz.ammo_mod_he"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/epic/attachment/tacz.ammo_mod_i"
+              }
+        ]
+      }
+    ]
+  }

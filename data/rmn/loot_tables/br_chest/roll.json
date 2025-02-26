@@ -1,0 +1,29 @@
+{
+    "pools": [
+      {
+        "rolls": 3,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "rmn:br_chest/common/roll",
+            "weight": 25
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rmn:br_chest/uncommon/roll",
+            "weight": 14
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rmn:br_chest/rare/roll",
+            "weight": 8
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "rmn:br_chest/epic/roll",
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  }

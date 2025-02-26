@@ -1,0 +1,37 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/gun/mk16.m4urgi"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/gun/nitrogen.sr_2m"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/gun/tacz.aa12"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/gun/tacz.deagle_golden"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/gun/tacz.m249"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/gun/tacz.sks_tactical"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/uncommon/gun/tacz.vector45"
+              }
+        ]
+      }
+    ]
+  }

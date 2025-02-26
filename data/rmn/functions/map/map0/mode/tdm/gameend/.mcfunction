@@ -1,5 +1,5 @@
 # 参加者をTP
-    execute in minecraft:overworld run tp @a[tag=rmn.entry] 0.5 56 0.5 0 0
+    execute in minecraft:overworld run tp @a[tag=rmn.entry] -5.5 57 -2.5 0 0
 
 # 参加者を元の状態へ戻す
     tag @a remove rmn.player
@@ -17,6 +17,10 @@
 # 試合時間を表示
     bossbar set minecraft:rmn.gametimer visible false
     bossbar set minecraft:rmn.gametimer players
+
+# リス地点をリセット
+    tag @e[type=marker,tag=rmn.map0,tag=rmn.tdm_random_spawn] remove rmn.red
+    tag @e[type=marker,tag=rmn.map0,tag=rmn.tdm_random_spawn] remove rmn.blue
 
 # 試合が終わったことにする
     data modify storage rmn: in_game set value 0b

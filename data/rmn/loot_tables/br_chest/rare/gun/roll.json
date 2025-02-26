@@ -1,0 +1,25 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/gun/tacz.ai_awp"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/gun/tacz.aug"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/gun/tacz.scar_h"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/rare/gun/mk16.sr25pc"
+              }
+        ]
+      }
+    ]
+  }

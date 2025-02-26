@@ -16,17 +16,32 @@
     scoreboard players operation @a[tag=rmn.player] rmn.in_match = #in_match rmn.temporary
     
     #参加者のマップidを更新
-    scoreboard players set @a[tag=rmn.player] rmn.in_map 0
+    scoreboard players set @a[tag=rmn.player] rmn.in_map 1
 
     #参加者のモードidを更新
-    scoreboard players set @a[tag=rmn.player] rmn.in_mode 0
+    scoreboard players set @a[tag=rmn.player] rmn.in_mode 1
 
 # チーム変更
     team join rmn.lobby @a[tag=!rmn.player]
     function rmn:map/map1/mode/tdm/system/team_random/
 
+# 初期リス地点を設定
+    tag @e[type=marker,tag=rmn.map1,tag=rmn.tdm_random_spawn,limit=1,sort=random,tag=!rmn.blue] add rmn.red
+    tag @e[type=marker,tag=rmn.map1,tag=rmn.tdm_random_spawn,limit=1,sort=random,tag=!rmn.red] add rmn.blue
+
 # 参加者をTP
-    function rmn:map/map1/mode/tdm/gamestart/tp_random
+    #tpしたい人にタグをつける
+    tag @a[tag=rmn.player] add rmn.need_spawn
+    function rmn:map/map1/mode/tdm/gamestart/tp_repeat
+
+# リス地点を再設定
+    function rmn:map/map1/mode/tdm/system/spawn/change/red/
+    function rmn:map/map1/mode/tdm/system/spawn/change/blue/
+
+# 参加者をTP
+    #tpしたい人にタグをつける
+    tag @a[tag=rmn.player] add rmn.need_spawn
+    function rmn:map/map1/mode/tdm/gamestart/tp_repeat
 
 # ロードアウト振り分け
     execute as @a[tag=rmn.player] run function rmn:map/map1/mode/tdm/system/get_loadout
@@ -51,6 +66,7 @@
     execute store result bossbar minecraft:rmn.gametimer max run scoreboard players get #tdm_gametimer rmn.temporary
     execute store result bossbar minecraft:rmn.gametimer value run scoreboard players get #tdm_gametimer rmn.temporary
     scoreboard players set #tdm_gametimer_tick rmn.temporary 20
+    scoreboard players set #tdm_change_spawn_tick rmn.temporary 100
 
 # 試合時間を表示
     bossbar set minecraft:rmn.gametimer visible true

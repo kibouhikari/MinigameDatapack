@@ -4,3 +4,6 @@
 
     #TDM
     execute if score #mode rmn.temporary matches 1 run scoreboard players operation #tdm_gametimer rmn.temporary = #tdm_default_gametimer rmn.temporary
+
+    #BR
+    execute if score #mode rmn.temporary matches 2 run scoreboard players operation #br_gametimer_0 rmn.temporary = #br_default_gametimer_0 rmn.temporary

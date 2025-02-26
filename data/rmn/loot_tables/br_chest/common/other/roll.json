@@ -1,0 +1,21 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/other/apple"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/other/carrot"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/other/healing_potion"
+              }
+        ]
+      }
+    ]
+  }

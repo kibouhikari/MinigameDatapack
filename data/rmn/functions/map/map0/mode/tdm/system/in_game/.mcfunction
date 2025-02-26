@@ -1,3 +1,10 @@
+# スポーン地点変更
+    execute if score #tdm_change_spawn_tick rmn.temporary matches ..0 run function rmn:map/map0/mode/tdm/system/spawn/change/red/
+    execute if score #tdm_change_spawn_tick rmn.temporary matches ..0 run function rmn:map/map0/mode/tdm/system/spawn/change/blue/
+    execute if score #tdm_change_spawn_tick rmn.temporary matches ..0 run scoreboard players set #tdm_change_spawn_tick rmn.temporary 200
+
+    scoreboard players remove #tdm_change_spawn_tick rmn.temporary 1
+
 # 死亡処理
     execute as @e[type=player,scores={rmn.deathcount=1..}] run tag @s add rmn.death
     execute as @r[tag=rmn.death] run function rmn:map/map0/mode/tdm/system/death/

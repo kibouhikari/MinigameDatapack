@@ -1,0 +1,61 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/atea.sight_eotech_eflx_pica"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/atea.sight_okp7"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/mk16.1p87"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/tacz.extended_mag_1"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/tacz.grip_magpul_afg_2"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/tacz.grip_vertical_talon"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/tacz.light_extended_mag_1"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/tacz.muzzle_brake_pioneer"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/tacz.oem_stock_light"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/tacz.scope_acog_ta31"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/tacz.sight_t2"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/tacz.sniper_extended_mag_1"
+              },
+              {
+                "type": "minecraft:loot_table",
+                "name": "rmn:br_chest/common/attachment/tacz.stock_tactical_ar"
+              }
+        ]
+      }
+    ]
+  }

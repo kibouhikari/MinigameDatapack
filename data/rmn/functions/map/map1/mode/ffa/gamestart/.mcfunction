@@ -16,7 +16,7 @@
     scoreboard players operation @a[tag=rmn.player] rmn.in_match = #in_match rmn.temporary
     
     #参加者のマップidを更新
-    scoreboard players set @a[tag=rmn.player] rmn.in_map 0
+    scoreboard players set @a[tag=rmn.player] rmn.in_map 1
 
     #参加者のモードidを更新
     scoreboard players set @a[tag=rmn.player] rmn.in_mode 0
